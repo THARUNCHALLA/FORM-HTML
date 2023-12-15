@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Form</title>
+    <style type="text/css">
+        h1{
+            color:red;
+            font-family:monospace;
+        }
+    </style>
+    <link rel="stylesheet" type="text/css" href="form.css"
+</head>
+<body>
+    <h1>Course Registration Form</h1>
+    <form>
+        <fieldset>
+            <legend>Personal Details</legend>
+            <table>
+                <tr>
+                    <td><label>First name</label></td>
+                    <td><input type="text" name="FN" placeholder="EX:Tharun" size="25"></td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>Surname</label>
+                    </td>
+                    <td>
+                        <input type="text" name="LN" placeholder="EX:Challa" size="25">
+                    </td>
+                </tr>
+                <tr>
+                    <td> <label>Mobile Number</label>
+                    </td>
+                    <td> <input type="tel" name="TelephoneNumber" placeholder="EX:967-564-0678" size="25"></td>
+                </tr>
+                <tr>
+                    <td><label>Email</label></td>
+                    <td><input type="email" name="email" placeholder="Challatharun31@gmail.com" size="25"></td>
+                </tr>
+                <tr>
+                    <td><label>PassWord</label></td>
+                    <td><input type="password" name="PWd" placeholder="EX:Tharun@2002" size="25"></td>
+                </tr>
+
+                <tr>
+                    <td> <label>Confirm PassWord</label></td>
+                    <td>
+                        <input type="password" name="ConfirmPWd" placeholder="EX:Tharun@2002" size="25">
+                    </td>
+                </tr>
+                <tr>
+                    <td><label>DOB</label></td>
+                    <td><input type="date" name="DOB" placeholder="EX:4-2-2002" size="25"></td>
+                </tr>
+                <tr>
+                    <td><label>Gender</label></td>
+                    <td> <input type="radio" name="gender" id="Male"><label for="Male">Male</label>
+                        <input type="radio" name="gender" id="Female"><label for="Female">Female</label>
+                        <input type="radio" name="gender" id="custom"><label for="custom">Custom</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label>Select Country </label></td>
+                    <td> <select name="Country">
+                            <option value="INDIA">INDIA</option>
+                            <option value="USA">USA</option>
+                            <option value="AUS">AUS</option>
+                        </select></td>
+                </tr>
+                <tr>
+                    <td> <label>Upload Picture</label></td>
+                    <td> <input type="file" name="pic"></td>
+                </tr>
+
+                <tr>
+                    <td><input type="reset"></td>
+                </tr>
+            </table>
+        </fieldset>
+        <fieldset>
+            <legend>Course Details</legend>
+            <table>
+                <tr>
+                    <td><label>Select Course </label></td>
+                    <td><select name="Course">
+                            <option value="PYTHON">Python</option>
+                            <option value="JAVA">Java</option>
+                            <option value="C">C</option>
+                        </select></td>
+                </tr>
+                <tr>
+                    <td> <label>Delivery Mode</label></td>
+                    <td> <input type="checkbox" id="ONLINE" value="ON"><label for="ONLINE">Online</label>
+                        <input type="checkbox" id="OFFLINE" value="OFF"><label for="OFFLINE">Offline</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td> <label>Comments</label></td>
+                </tr>
+            </table>
+            <textarea cols="80" rows="10" placeholder="When Will be the new Batch"></textarea>
+        </fieldset>
+        <img src="https://thumbs.dreamstime.com/b/submit-button-blue-submit-now-web-button-vector-illustration-isolated-white-background-121193417.jpg"
+            type="input" height="60" width="100">
+    </form>
+</body>
+</html>
